@@ -1,0 +1,2 @@
+# clicker
+Simple stopwatch PHP
