@@ -1,0 +1,64 @@
+* {
+    background-color: #ffc183;
+}
+
+button {
+    background: url("../images/cookie.png");
+    cursor: pointer;
+    width: 256px;
+    height: 256px;
+    border: none;
+    margin: 10px auto;
+    display: block;
+}
+
+span {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    color: #be7d3c;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+button:focus {
+    outline: 0;
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    -webkit-animation: rotating 7s linear infinite;
+    -moz-animation: rotating 7s linear infinite;
+    -ms-animation: rotating 7s linear infinite;
+    -o-animation: rotating 7s linear infinite;
+    animation: rotating 7s linear infinite;
+}
